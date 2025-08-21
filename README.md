@@ -1,5 +1,5 @@
 > [!WARNING]
-> `apps.txt` içerisinde yer alan paketler internet üzerinde kullanıcıların sildiği paketlerdir. Cihazınızda oluşacak herhangi bir arıza/brick durumundan kullanıcın kendisi sorumludur.
+> `apps.txt` içerisinde yer alan paketler internet üzerindeki kullanıcıların sildiği paketlerdir. Cihazınızda oluşacak herhangi bir arıza/brick durumundan kullanıcın kendisi sorumludur.
 
 # HyperOS deBloater
 > Cihazına değer verenlerin tercihi...
