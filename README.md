@@ -11,11 +11,13 @@ HyperOS işletim sistemini kullanan cihazları günlük hayatta az kullanın uyg
 
 ### Gereksinimler
 
+- USB hata ayıklama açık olmalıdır!!
 - android-platform-tools
 - Python3
 
 ```
 pip install -r requirements.txt
-
 python3 main.py
 ```
+
+Script kendisi bir shell açarak uygulamaları silmeye başlar.
