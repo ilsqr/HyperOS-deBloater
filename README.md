@@ -12,7 +12,7 @@ HyperOS işletim sistemini kullanan cihazları günlük hayatta az kullanın uyg
 ### Gereksinimler
 
 - android-platform-tools
-- Python
+- Python3
 
 ```
 pip install -r requirements.txt
