@@ -74,12 +74,9 @@ com.google.android.apps.tachyon
 com.facebook.system
 com.facebook.appmanager
 com.facebook.services
-com.google.android.inputmethod.latin
 com.google.android.gm
-com.google.android.googlequicksearchbox
 com.google.android.apps.photos
 com.google.android.play.games
-com.android.vending
 com.google.android.videos
 com.google.android.music
 com.xiaomi.mirecycle
