@@ -6,16 +6,7 @@
 
 ## 📋 Proje Hakkında
 
-HyperOS deBloater, Xiaomi HyperOS işletim sistemini kullanan Android cihazlardan gereksiz ön yüklü uygulamaları (bloatware) temizlemek için geliştirilmiş otomatik bir Python aracıdır.
-
-### ✨ Özellikler
-
-- ✅ **ADB Entegrasyonu** - Android Debug Bridge ile güvenli bağlantı
-- ✅ **Root Desteği** - Rootlu ve rootsuz cihazlarda çalışır
-- ✅ **Akıllı Silme** - Sistem korumalı paketler için alternatif yöntemler
-- ✅ **Renkli Çıktı** - Terminalde görsel geri bildirim
-- ✅ **Güvenli Kontrol** - Kritik Google bileşenleri korunur
-- ✅ **Hata Yönetimi** - Başarısız işlemler raporlanır
+HyperOS deBloater, Xiaomi HyperOS işletim sistemini kullanan Android cihazlardan gereksiz ön yüklü uygulamaları (bloatware) temizlemek için geliştirilmiş otomatik bir Python aracıdır.ß
 
 ### 🎯 Projenin Amacı
 
@@ -56,15 +47,15 @@ python3 main.py
 
 Aşağıdaki tabloda `apps.txt` dosyasında bulunan tüm paketler ve açıklamaları yer almaktadır:
 
+> [!NOTE]
+> **Güvenlik Güncellemesi:** Kritik sistem paketleri listeden çıkarılmıştır. Toplam **93 paket** güvenli şekilde kaldırılabilir.
+
 | Paket Adı | Açıklama | Kategori |
 |-----------|----------|----------|
-| `com.miui.powerkeeper` | MIUI Güç Yöneticisi - Pil optimizasyonu | MIUI Sistem |
 | `com.android.browser` | Varsayılan Android Tarayıcı | Tarayıcı |
-| `com.miui.hybrid` | MIUI Hibrit Motor - Hızlı Uygulamalar | MIUI Sistem |
 | `com.android.emergency` | Acil Durum Bilgileri | Sistem |
 | `com.android.soundrecorder` | Ses Kaydedici | Multimedya |
 | `com.google.android.apps.docs` | Google Docs | Google |
-| `com.android.providers.downloads.ui` | İndirilenler Yöneticisi UI | Sistem |
 | `com.miui.notes` | MIUI Notlar | MIUI Uygulama |
 | `com.miui.screenrecorder` | MIUI Ekran Kaydedici | Multimedya |
 | `com.android.dreams.phototable` | Fotoğraf Ekran Koruyucu | Tema |
@@ -108,25 +99,20 @@ Aşağıdaki tabloda `apps.txt` dosyasında bulunan tüm paketler ve açıklamal
 | `com.android.deskclock` | Android Saat/Alarm | Araçlar |
 | `com.miui.analytics` | MIUI Analitik - Kullanım İstatistikleri | MIUI Sistem |
 | `com.android.egg` | Android Easter Egg | Sistem |
-| `com.dsi.ant.server` | ANT+ Kablosuz Servis | Sistem |
 | `com.miui.audioeffect` | MIUI Ses Efektleri | Multimedya |
 | `com.aura.oobe.xiaomi` | Xiaomi İlk Kurulum Deneyimi | MIUI Sistem |
 | `com.android.bookmarkprovider` | Tarayıcı Yer İmleri Sağlayıcı | Sistem |
 | `com.android.chrome` | Google Chrome | Tarayıcı |
 | `com.miui.qr` | MIUI QR Kod Tarayıcı | Araçlar |
 | `com.android.providers.partnerbookmarks` | Ortak Yer İmleri | Sistem |
-| `com.android.sharedstoragebackup` | Paylaşılan Depolama Yedekleme | Sistem |
 | `com.android.wallpaperbackup` | Duvar Kağıdı Yedekleme | Sistem |
 | `com.android.wallpapercropper` | Duvar Kağıdı Kırpıcı | Tema |
 | `com.mfashiongallery.emag` | Moda Galerisi | Tema |
-| `com.miui.antispam` | MIUI Anti-Spam | MIUI Sistem |
 | `com.miui.extraphoto` | MIUI Fotoğraf Düzenleyici Eklentileri | Multimedya |
-| `com.miui.smsextra` | MIUI SMS Eklentileri | MIUI Sistem |
 | `com.miui.translation.kingsoft` | Kingsoft Çeviri Servisi | MIUI Sistem |
 | `com.miui.translation.xmcloud` | Xiaomi Cloud Çeviri | MIUI Sistem |
 | `com.miui.translation.youdao` | Youdao Çeviri Servisi | MIUI Sistem |
 | `com.miui.translationservice` | MIUI Çeviri Servisi | MIUI Sistem |
-| `com.qti.dpmserviceapp` | Qualcomm Veri Performans Yöneticisi | Sistem |
 | `com.qualcomm.embms` | Qualcomm eMBMS (Multicast) | Sistem |
 | `com.xiaomi.joyose` | Xiaomi Joyose Servisi | Xiaomi Servis |
 | `com.google.android.apps.tachyon` | Google Duo | Google |
@@ -159,14 +145,12 @@ Aşağıdaki tabloda `apps.txt` dosyasında bulunan tüm paketler ve açıklamal
 | `com.miui.vsimcore` | MIUI Sanal SIM Çekirdeği | MIUI Sistem |
 | `com.qualcomm.wfd.service` | Qualcomm Wi-Fi Display Servisi | Sistem |
 
-## ⚠️ Önemli Uyarılar
+### ⚠️ Genel Uyarılar
 
-- ❌ **Google Play Store** (`com.android.vending`) - Listeden çıkarıldı (kritik)
-- ❌ **Gboard** (`com.google.android.inputmethod.latin`) - Listeden çıkarıldı (kritik)
-- ❌ **Google App** (`com.google.android.googlequicksearchbox`) - Listeden çıkarıldı (kritik)
 - ⚠️ Yanlış paket silinmesi cihazınızı kullanılamaz hale getirebilir
-- ⚠️ İşlem öncesi yedek almak önerilir
+- ⚠️ İşlem öncesi **mutlaka yedek** almak önerilir
 - ⚠️ Sistem uygulamaları için root gerekebilir
+- 📱 Cihaz açılmıyorsa Recovery'den fabrika ayarlarına dönün
 
 ## 🔄 Geri Yükleme
 
